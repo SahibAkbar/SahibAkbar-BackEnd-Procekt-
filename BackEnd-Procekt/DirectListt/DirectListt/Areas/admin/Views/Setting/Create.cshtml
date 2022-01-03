@@ -1,0 +1,71 @@
+﻿@model Setting
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Areas/admin/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+            <form asp-area="Admin" asp-controller="About" asp-action="Create" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label asp-for="@Model.Logo">Logo</label>
+                    <input class="form-control" asp-for="@Model.Logo">
+                    <span asp-validation-for="@Model.Logo" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="@Model.ContactAdress">ContactAdress</label>
+                    <input class="form-control" asp-for="@Model.ContactAdress">
+                    <span asp-validation-for="@Model.ContactAdress" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="@Model.ContactEmail">ContactEmail</label>
+                    <input class="form-control" asp-for="@Model.ContactEmail">
+                    <span asp-validation-for="@Model.ContactEmail" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="@Model.ContactPhone">ContactPhone</label>
+                    <input class="form-control" asp-for="@Model.ContactPhone">
+                    <span asp-validation-for="@Model.ContactPhone" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="@Model.Adress">Adress</label>
+                    <input class="form-control" asp-for="@Model.Adress">
+                    <span asp-validation-for="@Model.Adress" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="@Model.Email">Email</label>
+                    <input class="form-control" asp-for="@Model.Email">
+                    <span asp-validation-for="@Model.Email" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="@Model.Phone">Phone</label>
+                    <input class="form-control" asp-for="@Model.Phone">
+                    <span asp-validation-for="@Model.Phone" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="@Model.About">AboutUS</label>
+                    <textarea id="editor" class="form-control" asp-for="@Model.About"></textarea>
+                    <span asp-validation-for="@Model.About" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="@Model.DreamTitle">DreamTitle</label>
+                    <input class="form-control" asp-for="@Model.DreamTitle">
+                    <span asp-validation-for="@Model.DreamTitle" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="@Model.DreamSubTitle">DreamSubTitle</label>
+                    <input class="form-control" asp-for="@Model.Phone">
+                    <span asp-validation-for="@Model.DreamSubTitle" class="text-danger"></span>
+                </div>
+
+
+
+
+                <button type="submit" class="btn btn-primary">Create</button>
+                <button type="submit" class="btn btn-dark" asp-area="admin" asp-controller="About" asp-action="Index">Back to List</button>
+
+            </form>
+        </div>
+    </div>
+</div>
