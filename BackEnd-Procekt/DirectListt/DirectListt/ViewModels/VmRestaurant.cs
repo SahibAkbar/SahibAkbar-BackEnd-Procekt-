@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DirectListt.ViewModels
 {
-    public class VmRetaurant:VmLayout
+    public class VmRestaurant:VmLayout
     {
         public List<Restaurant> Restaurants { get; set; }
         public List<Booking> Bookings { get; set; }
@@ -16,5 +16,6 @@ namespace DirectListt.ViewModels
         public List<RestaurantReview> RestaurantReviews { get; set; }
         public List<Tag> Tags { get; set; }
         public Banner Banner { get; set; }
+        public List<Adminstrator> Adminstrators { get; set; }
     }
 }

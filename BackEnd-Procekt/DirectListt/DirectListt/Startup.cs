@@ -31,6 +31,8 @@ namespace DirectListt
             services.AddDbContext<AppDbContext>(option => option.UseSqlServer(Configuration.GetConnectionString("DirectListCS")));
             services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<AppDbContext>();
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            services.AddSession();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -48,9 +50,11 @@ namespace DirectListt
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+            app.UseSession();
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
@@ -58,7 +62,7 @@ namespace DirectListt
                 endpoints.MapAreaControllerRoute(
                    name: "Areas",
                    areaName: "admin",
-                   pattern: "admin/{controller=Home}/{action=Index}/{id?}"
+                   pattern: "admin/{controller=account}/{action=login}/{id?}"
                    );
                 endpoints.MapControllerRoute(
                     name: "default",

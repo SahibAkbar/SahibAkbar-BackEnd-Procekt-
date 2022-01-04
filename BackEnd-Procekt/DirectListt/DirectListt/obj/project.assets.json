@@ -7309,11 +7309,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Sahib\\Desktop\\BackEnd-Procekt\\DirectListt\\DirectListt\\DirectListt.csproj",
+      "projectUniqueName": "C:\\Users\\Sahib\\Desktop\\BackEnd\\BackEnd-Procekt\\DirectListt\\DirectListt\\DirectListt.csproj",
       "projectName": "DirectListt",
-      "projectPath": "C:\\Users\\Sahib\\Desktop\\BackEnd-Procekt\\DirectListt\\DirectListt\\DirectListt.csproj",
+      "projectPath": "C:\\Users\\Sahib\\Desktop\\BackEnd\\BackEnd-Procekt\\DirectListt\\DirectListt\\DirectListt.csproj",
       "packagesPath": "C:\\Users\\Sahib\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Sahib\\Desktop\\BackEnd-Procekt\\DirectListt\\DirectListt\\obj\\",
+      "outputPath": "C:\\Users\\Sahib\\Desktop\\BackEnd\\BackEnd-Procekt\\DirectListt\\DirectListt\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Sahib\\AppData\\Roaming\\NuGet\\NuGet.Config",

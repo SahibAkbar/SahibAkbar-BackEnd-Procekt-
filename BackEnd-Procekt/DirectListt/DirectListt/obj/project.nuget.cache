@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4cwrenHSBP5ljrCK/gWM7l0UwW1+fS7OvmrdgMlBKQkKibx20chToV7QnkGKwB2UkqyMV5dbSMPmP/TUGWlHDg==",
+  "dgSpecHash": "8Igj5YSbyqF4dZrE0u8jG6HZVqhnh6jtuISyy7bkJ+CnkiVZwu2lLkgHf6sFRDIIzWJCVc1Dgbd77JG2kwRDuw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Sahib\\Desktop\\BackEnd-Procekt\\DirectListt\\DirectListt\\DirectListt.csproj",
+  "projectFilePath": "C:\\Users\\Sahib\\Desktop\\BackEnd\\BackEnd-Procekt\\DirectListt\\DirectListt\\DirectListt.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Sahib\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Sahib\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.13\\microsoft.aspnetcore.cryptography.internal.5.0.13.nupkg.sha512",

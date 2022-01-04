@@ -1,4 +1,5 @@
 ﻿using DirectListt.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DirectListt.Data
 {
-    public class AppDbContext:DbContext
+    public class AppDbContext:IdentityDbContext
     {
         public AppDbContext(DbContextOptions option) : base(option)
         {
@@ -32,5 +33,7 @@ namespace DirectListt.Data
         public DbSet<Setting> Settings { get; set; }
         public DbSet<Social> Socials { get; set; }
         public DbSet<Tag> Tags { get; set; }
+        public DbSet<UserAdmin> UserAdmins { get; set; }
+        public DbSet<Adminstrator> Adminstrators { get; set; }
     }
 }

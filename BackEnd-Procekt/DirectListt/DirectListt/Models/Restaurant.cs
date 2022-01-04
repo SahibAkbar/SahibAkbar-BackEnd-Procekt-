@@ -47,5 +47,6 @@ namespace DirectListt.Models
         public List<RestaurantImage> RestaurantImages { get; set; }
         public List<RestaurantToFetaure> RestaurantToFetaures { get; set; }
         public List<Booking> Bookings { get; set; }
+        public List<Adminstrator> Adminstrators { get; set; }
     }
 }

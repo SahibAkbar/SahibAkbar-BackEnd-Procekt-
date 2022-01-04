@@ -1,4 +1,4 @@
-﻿
+﻿@model VmLayout
 <!doctype html>
 <html lang="en">
 
@@ -81,17 +81,17 @@
                         <br><br>
                         <p class="text-white">Morbi convallis bibendum urna ut viverra. Maecenas quis consequat libero, a feugiat eros. Nunc ut lacinia tortor morbi ultricies laoreet ullamcorper phasellus semper.</p>
                         <div class="text-widget text-white">
-                            <span class="text-white">12345 Little Lonsdale St, Melbourne</span> <br> Phone: <span class="text-white">(123) 123-456 </span><br> E-Mail:
-                            <span class="text-white"> <a href="#" class="text-white">office@example.com</a> </span><br>
+                            <span class="text-white">@Model.Setting.Adress</span> <br> Phone: <span class="text-white">@Model.Setting.Phone </span><br> E-Mail:
+                            <span class="text-white"> <a href="#" class="text-white">@Model.Setting.Email</a> </span><br>
                         </div>
                         <div class="mt-4">
-                            @*@foreach (var item in Model)
+                            @foreach (var item in Model.Socials)
                                 {
-                                    <a target="_blank" @item.Link class="btn btn-neutral btn-icon-only btn-round btn-lg" data-toggle="tooltip" data-original-title="Follow us">
-                                        <i class=@item.Icon></i>
-                                    </a>
+                                        <a target="_blank" href="https://@item.Link/" class="btn btn-neutral btn-icon-only btn-round btn-lg" data-toggle="tooltip" data-original-title="Star on Github">
+                                            <i class="@item.Icon"></i>
+                                        </a>
 
-                                    }*@
+                                    }
 
                         </div>
                     </div>

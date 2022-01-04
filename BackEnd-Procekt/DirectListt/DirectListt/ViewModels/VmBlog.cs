@@ -14,6 +14,5 @@ namespace DirectListt.ViewModels
         public Comment Comment { get; set; }
         public Banner Banner { get; set; }
         public CustomUser CustomUser { get; set; }
-        public List<Social> Socials { get; set; }
     }
 }
