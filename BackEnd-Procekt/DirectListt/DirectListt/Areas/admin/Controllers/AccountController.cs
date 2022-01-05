@@ -28,6 +28,7 @@ namespace DirectListt.Areas.admin.Controllers
             _context = context;
             _webHostEnvironment = webHostEnvironment;
         }
+
         public IActionResult Register()
         {
             return View();
